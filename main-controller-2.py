@@ -15,9 +15,9 @@ os.environ["MLFLOW_TRACKING_URI"] = "sqlite:///./mlflow_model_runs/model_runs.db
 
 experiments = [
         ## RBT TRAIN
-        ("model_A.py", gpu_no, "1"),
-        ("model_A.py", gpu_no, "2"),
-        ("model_A.py", gpu_no, "3"),
+        ("model_B.py", gpu_no, "1"),
+        ("model_B.py", gpu_no, "2"),
+        ("model_B.py", gpu_no, "3"),
 ]
 
 for i in experiments:
