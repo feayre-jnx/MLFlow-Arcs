@@ -23,7 +23,7 @@ Create a folder named ```mlflow_model_runs``` in root then run this line
 
 ```default-artifact-root``` creates a folder where the weights and metrics are saved
 
-After running the mlflow server, normally it can be access through the browser usually at this address ```http://127.0.0.1:5000```
+After running the mlflow server, normally, it can be access through the browser and usually at this address ```http://127.0.0.1:5000```
 
 ## Run the main code
 The model here is a dummy model from the tensorflow documentation, which can be swapped by the appropriate one. Models A and B are just distinctions between two different models.
