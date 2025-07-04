@@ -1,4 +1,4 @@
-## model_A is a placeholder model
+## model_B is a placeholder model
 #%%
 import tensorflow as tf
 from tensorflow import keras 
@@ -19,7 +19,7 @@ except:
 
 ## record everything in mlflow
 database_uri = 'http://127.0.0.1:5009'
-run_name = "Model A"
+run_name = "Model B"
 mlflow.set_tracking_uri(database_uri)
 mlflow.tensorflow.autolog()
 
@@ -36,6 +36,7 @@ with mlflow.start_run(run_name=run_name, tags=tags):
         inputs = keras.Input(shape=(784,), name="digits")
         x = keras.layers.Dense(64, activation="relu", name="dense_1")(inputs)
         x = keras.layers.Dense(64, activation="relu", name="dense_2")(x)
+        x = keras.layers.Dense(64, activation="relu", name="dense_3")(x)
         outputs = keras.layers.Dense(10, activation="softmax", name="predictions")(x)
 
         model = keras.Model(inputs=inputs, outputs=outputs)

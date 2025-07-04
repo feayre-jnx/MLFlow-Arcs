@@ -4,7 +4,7 @@ import subprocess
 import os
 
 ## init options
-gpu_no = "0"
+gpu_no = "1"
 
 ## create the mlflow db folder if it does not exist
 mlflow_db_path = './mlflow_model_runs/'
