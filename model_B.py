@@ -18,7 +18,7 @@ except:
 
 
 ## record everything in mlflow
-database_uri = 'http://127.0.0.1:5009'
+database_uri = 'http://127.0.0.1:5000'
 run_name = "Model B"
 mlflow.set_tracking_uri(database_uri)
 mlflow.tensorflow.autolog()

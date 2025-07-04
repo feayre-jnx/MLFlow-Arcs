@@ -26,7 +26,7 @@ Create a folder named ```mlflow_model_runs``` in root then run this line
 After running the mlflow server, normally, it can be access through the browser and usually at this address ```http://127.0.0.1:5000```.
 
 ## Run the main code
-The model here is a dummy model from the tensorflow documentation, which can be swapped by the appropriate one. Models A and B are just distinctions between two different models.
+The model here is a dummy model from the tensorflow documentation, which can be swapped with the appropriate one. Models A and B are just distinctions between two different models.
 
 To run the model experiments, use the main-controllers. There are 2 main-controllers, which corresponds to each gpu available. In this example, the ```main-controller.py``` runs the model_A multiple times (i.e., 3x) while recording the results in mlflow.
 
